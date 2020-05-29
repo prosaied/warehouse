@@ -1,0 +1,6 @@
+---
+
+- name: Copy Error Files
+  copy:
+    src: ../templates/errors
+    dest: /etc/haproxy
