@@ -1,0 +1,6 @@
+---
+- name: prerequistites
+  include_tasks: common.yml
+
+- name: Installing the haproxy
+  include_tasks: install.yml

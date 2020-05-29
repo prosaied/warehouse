@@ -1,0 +1,5 @@
+---
+- name: "Installing HA-Proxy the latest version"
+  apt:
+    name: haproxy
+    state: latest
