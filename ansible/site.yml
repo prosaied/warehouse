@@ -1,5 +1,9 @@
 ---
 - hosts: haproxy
   roles:
-    #- role: provision
     - haproxy
+
+- hosts: webserver
+  roles:
+    - nginx
+  vars:
