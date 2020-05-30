@@ -1,6 +1,6 @@
 ---
 
 - name: Copy Index page
-  copy:
+  template:
     src: ../templates/www/index.j2
     dest: /var/www/html/index.html
