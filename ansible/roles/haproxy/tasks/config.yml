@@ -4,3 +4,10 @@
   copy:
     src: ../templates/errors
     dest: /etc/haproxy
+
+- name: Copying HA-proxy configuration files
+  template:
+    src: ../templates/configurations/haproxy.j2
+    dest: /etc/haproxy/haproxy.cfg
+  notify:
+    - restart haproxy
